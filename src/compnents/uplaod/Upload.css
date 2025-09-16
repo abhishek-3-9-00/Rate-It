@@ -1,0 +1,19 @@
+.upload-image-cont{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+
+}
+
+
+::-webkit-file-upload-button {
+    background: #E53528;
+    color: white;
+    padding: 1em;
+  }
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}

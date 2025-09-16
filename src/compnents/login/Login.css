@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+}
+body{
+    margin: 0;
+}
+.it{
+    color: #E53528;
+}
+.login-text{
+    cursor: pointer;
+    color: darkblue;
+}
+.login-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    background-repeat: no-repeat ;
+
+}
+.login-bg-image{
+    /* position: absolute; */
+    width:45%;
+    height: 100vh;
+    right: 10%;
+}
+.login-bg-image img{
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
+
+.invalidMsg{
+    position: absolute;
+    color: red;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+a{
+    text-decoration: none;
+    
+}
+.login{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+    align-items: center;
+}
+.login-win{
+    /* position: absolute; */
+    height: 350px;
+    z-index: 1;
+    width: 300px;
+    left: 20%;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    align-items: center;
+}
+.login-win .logo{
+    /* position: absolute; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* left: 40%; */
+    /* left: 50%;
+    transform: translateX(-50%);*/
+    top: 10%; 
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.login-form{
+    justify-content: space-evenly;
+    display: flex;
+    /* position: absolute; */
+    width: 100%;
+    height: 60%;
+    /* top: 100px; */
+    flex-direction: column;
+    align-items: center;
+}
+.login-form input{
+    box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 40px;
+    outline: none;
+    text-align: center;
+    transition: 0.3s ease;
+    
+
+}
+.login-form input:hover{
+    box-shadow: none;
+    outline: none;
+    border: 1.5px solid black;
+}
+.btn{
+    box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+    width: 250px;
+    height: 40px;
+    /* margin-top: 20px; */
+    /* margin-left: 10px; */
+    border: none;
+    border-radius: 40px;
+    font-size: large;
+    font-weight: bolder;
+    color: white;
+    background-color: #E53528;
+    cursor: pointer;
+    margin: 0;
+}
+.login-form .btn:hover{
+    box-shadow: none;
+    border: 1.5px solid black;
+}
+@media (max-width:600px){
+    .login-container{
+        width: 100%;
+        height: 100vh;
+    }
+    .login-bg-image{
+        display: none;
+    }
+    .login{
+        justify-content: center;
+        align-items: center;
+    }
+    .login-form{
+        position: static;
+    }
+    .login-container img{
+        display: none;
+    }
+    .login-win{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .login-win .logo{
+        top: 0;
+    }
+
+}

@@ -1,0 +1,37 @@
+
+.sugg-user-cont {
+    display: flex;
+    /* margin-left: 3px; */
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+   
+    
+}
+.sugg-user-img{
+    width: 30px;
+    height: 30px;
+    clip-path: circle();
+}
+.sugg-user-img img{
+    width: 30px;
+    height: 30px;
+}
+
+.sugg-user-container button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.fa-circle-plus{
+    color: #672EE3;
+}
+
+.fa-check{
+    color: green;
+}
+.searched-user-cont{
+    flex-direction: row !important;
+}
+

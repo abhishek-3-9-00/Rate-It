@@ -1,0 +1,132 @@
+.suggestion-cont{
+    position: absolute;
+    /* background-color: white; */
+    top: 0px;
+    right: 7%;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* overflow: hidden; */
+    
+}
+.current-user{
+    width: 80%;
+    border-radius: 5px;
+    margin: 10px;
+    gap: 10px;
+    padding: 10px;
+    height: 80px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    align-items: center;
+
+
+}
+.sugg-win{
+    width: 80%;
+    border-radius: 5px;
+    margin: 10px;
+    height: 180px;
+    gap: 10px;
+    padding: 10px;
+    transition: .5s ease;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+}
+.user-name h6{
+    font-weight: 400;
+}
+.user-box{
+    width: 50px;
+    height: 50px;
+    clip-path: circle();
+}
+.user-box img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+/* .show-more{
+    height:200px;
+} */
+
+
+.show-more{
+    transition: 0.2 sec ease;
+    height:580px;
+}
+.show-more-btn{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    outline: none;
+    border: none;
+    background-color: white;
+    height: 25px;
+    color:#672EE3 ;
+    cursor: pointer;
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+
+    /* transform: translateY(50%) */
+}
+.sugg-user-container{
+    /* width: 100%; */
+    height: 50px;
+    padding-left: 3px;
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding-right: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 3px;
+    flex-direction: row;
+}
+
+@media (max-width:1200px) {
+    .current-user{
+        display: none;
+    }
+    .suggestion-cont{
+        width: 97%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: auto;
+        margin-top: 30px;
+       
+    }
+    .show-more-btn{
+        display: none;
+    }
+    .sugg-win{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        height: auto !important;
+        justify-content: flex-start;
+        box-shadow: none;
+
+    }
+    .sugg-user-container{
+        flex-direction: column;
+        height: auto;
+    }
+    .sugg-win h5{
+        position: absolute;
+        top:-10px;
+        left: 10px;
+    }
+    .sugg-user-cont{
+        flex-direction: column;
+        margin: 10px;
+    }
+    
+}
